@@ -21,7 +21,7 @@ let counter = gotchem('counter', 0);
 number.textContent = counter;
 
 let startpoint = gotchem('startpoint', 0);
-startpointin.value = startpoint;
+if (startpoint !== '0') startpointin.value = startpoint;
 
 function main(e) {
   if (e.target.matches('#resetbtn')) {
