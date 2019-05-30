@@ -21,7 +21,7 @@ let counter = gotchem('counter', 0);
 number.textContent = counter;
 
 let startpoint = gotchem('startpoint', 0);
-if (startpoint !== '0') startpointin.value = startpoint;
+if (startpoint != 0) startpointin.value = startpoint; //!= because I'm not sure how iOS handles types in and out of localStorage 
 
 function main(e) {
   if (e.target.matches('#resetbtn')) {
