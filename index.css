@@ -1,0 +1,28 @@
+#number {
+  position: relative;
+  top: 25vh;
+  font-size: calc(40px + 60vw);
+  padding: 0;
+  margin: 0;
+  height: 0;
+  text-align: center;
+}
+
+#resetbtn {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 20vw;
+  bottom: 1.5vh;
+  left: 40vw;
+}
+
+@media screen and (orientation: landscape) {
+  #number {
+    font-size: calc(40px + 35vw);
+    top: 4vh;
+  }
+}
